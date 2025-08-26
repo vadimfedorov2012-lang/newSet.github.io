@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&family=Rubik:wght@300..900&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none
+}
+body{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   background-color: #000000;
+}
+.wrapper{
+background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,40,0,1) 100%);
+width: 100%;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 29px;
+    font-weight: 800;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2; 
+}
+nav{
+    float: right;
+    width: 50%;
+}
+nav ul li {
+    margin-right: 88px;
+    list-style-type:none;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li.active::after {
+ content: "";
+ display: block;
+ width: 40px;
+ height: 4px;
+ background:#DC7000;
+ border-radius: 20px;
+ position: relative;
+ top: 14px;
+ left: -20px;
+}
+nav ul li:not(.active):not(.button) a:hover {
+    border-bottom: 5px solid #DC7000;
+}
+.button a , .input button , .About_btn , .works .work_block button,.Lorem{
+    background-color: #FA9021;
+    border-radius: 20px;
+    padding: 9px 17px;
+    transition: all 500ms ease;
+}
+.button a:hover , .input button:hover , .About_btn:hover , .works .work_block button:hover,.Lorem:hover {
+    background-color: #e25706;
+};
+.Customer_block{
+    border-radius: 20px;
+    padding: 9px 17px;
+    transition: all 500ms ease;
+}
+.Customer_block:hover{
+    background-color: #0F0901;
+}
+img{
+    max-width: 100%;
+}
+header{
+    padding: 50px 0;
+}
+.hero{
+padding-bottom: 120px;
+position: relative;
+}
+.hero-info{
+    width: 530px;
+}
+.hero-info h2 {
+    color: #E87D0E;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 17px;
+}
+.hero-info h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 155%;
+    
+    margin-bottom: 26px;
+}
+.hero-info p {
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 200%;
+    width: 500px;
+    margin-bottom: 50px;
+}
+.hero-info .btn, .projects .SEEALL{
+    background: #25211d;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+    transition: all 500ms ease; 
+}
+
+.hero-info .btn:hover, .projects .SEEALL:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero_img{
+position: absolute;
+ top:-180px;
+ right:10px;   
+   z-index: 1; 
+}
+/*Середина страцины*/
+.trending {
+    padding-top: 50px;
+}
+.trending h3{
+font-family: "Rubik", sans-serif;
+font-weight: bold;
+font-size: 31px;
+}
+.trending a{
+    display: block;
+    font-family: "Rubik", sans-serif;
+    font-weight: medium;
+    font-size: 20px;
+    background: #000000;
+    border-radius: 10px;
+    padding: 10px 30px;  
+    float: right;
+}
+.Games-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+.games-1{
+    margin-right: 47px;
+}
+.games-1:last-child{
+    margin-right: 0;
+}
+.Games-top span{
+    display: block;
+    text-align: center;
+    margin-right: 50px;
+}
+.Games-top span img{
+    position: relative;
+    margin-right: 8px;
+    top: 4px;
+}
+.games-text{
+    display: block;
+    text-align: center;
+    line-height: 187%;
+    width: 826px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 129px;
+}
+.games-text-down{
+    margin-top: 67px;
+}
+.games-text-down h3 {
+    font-weight: 600;
+    font-size: 30px;  
+}
+.games-text-down p {
+width: 545px;
+line-height: 187%;
+padding-top: 32px;
+font-size: 16px;
+}
+.baner{
+    margin-top: 46px;
+    padding-bottom: 157px;
+}
+.baner img{
+    display: block;
+    margin: 0 auto;
+}
+/*часть с игровыми девайсами*/
+.tehno{
+background:url("./img/db4d123c4b390965f684f22d4bf13849\ 1.png") no-repeat center center;
+background:url(./img/Rectangle\ 5.png) no-repeat center center;
+background-size: cover;
+padding: 80px 0;
+}
+.tehno-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tehno-text{
+    line-height: 187%;
+    width: 820px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    font-size: 16px;
+}
+.one{
+    width: 800px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tehno-blocks{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 150px;
+   
+}
+.tehno-block{
+    margin-right: 100px;
+}
+.tehno-block:last-child{
+    margin-right: 0;
+}
+.tehno-block p{
+    margin-top: 30px;
+ }
+.end{
+    margin-top: 60px;
+    padding-right: 50px;
+}
+.arrow{
+    display: block;
+    margin: 25px auto 0 auto;
+}
+/*игровые проекты*/
+.projects{
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.projects h3 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.projects p {
+    font-size: 14px;
+    width: 497px;
+    margin: 0 auto; 
+    margin-bottom: 30px;
+}
+.projects .images{
+    display: flex;
+   justify-content: space-around;
+   margin-bottom: 33px;
+}
+.projects .images:last-child{
+   margin-bottom: 0px;
+}
+.projects .SEEALL {
+    float: none;
+ }
+ /*почта-----------------!тут ошибка*/
+ .email {
+    padding: 100px 0;
+ }
+ .email h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+ }
+ .email p {
+    font-size: 16px;
+    margin-bottom: 70px;
+ }
+ .email_block{
+    background-color: #1C140F;
+    border-radius: 15px;
+    padding: 40px 3%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .email_block .text {
+    width: 636px;
+ }
+ input {
+    padding: 20px 0;
+    width: 400px;
+    position: relative;
+    z-index: 1;
+ }
+ input::placeholder {
+    padding-left: 20px;
+ }
+ .input button {
+position: relative;
+z-index: 2;
+ }
+  /*About us*/
+  .About_hero{
+    display: flex;
+    justify-content: space-between;
+}
+.About_block{
+    width: 425px;
+}
+.About_block h3{
+    width: 425px;
+    line-height:180%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.About_block p{
+    width: 415px;
+    font-size: 15px;
+    line-height:208%;
+    margin: 25px 0 60px 0;
+}
+  /*Work*/
+  .Work{
+    width: 1220px;
+    padding: 150px 0;
+}
+.works{
+    display: flex;
+    justify-content: space-around;
+}
+.work_block{
+    width: 304px;
+    margin-top: 50px;
+    background-color: #1C140F;
+    border-radius: 20px;
+    padding: 40px;
+    margin-right: 45px;
+}
+.work_block:last-child{
+   margin-right: 0;
+}
+.works .work_block button{
+    border-radius: 5px;
+}
+.works .work_block .pirple{
+    background-color: #B000DC;
+}
+.works .work_block .brown{
+    background-color: #DC4200;
+}
+.works .work_block .green{
+    background-color: #00DC8D;
+}
+.work h3{
+    padding-left: 150px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.work_block h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 18px 0;
+}
+  /*Блок с девушкой*/
+  .girl{
+    padding: 100px 0;
+    background-color: #1C140F;
+    background-size: cover;
+  }
+  .girl_one{
+    display: flex;
+    justify-content: space-around;
+  }
+  .girl img {
+    display: block;
+    max-width:496px;
+  }
+  .girl_block{
+    width: 536px;
+  }
+  .girl_block p{
+    font-size: 16px;
+    margin: 45px 0 0 0;
+  }
+  .girl_block h3{
+    margin: 15px 0 0px 0;
+    font-size: 28px;
+  }
+
+    /*Наша группа*/
+    .our_teams{
+        padding: 100px 0;
+    }
+    .our_teams h3{
+        margin-left: 90px;
+        margin-bottom: 55px;
+    }
+     .our_team{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+     }
+     .group{
+        text-align: center;
+        background-color:#1C140F;
+        border-radius: 20px;
+        padding: 40px 85px 40px 85px;
+        margin-right: 30px;
+     }
+      /*Сервис*/
+      .Service_hero{
+        text-align: center;
+       }
+       .Service_hero h1{
+        margin-bottom: 13px;
+       }
+       .Service_clients{
+        width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        background-color: #1C140F;
+        border-radius: 10px;
+        margin-top: 45px;
+       }
+       .Service_clients .client {
+        display: flex;
+        align-items: center;
+        padding: 45px 40px;
+        margin-left: 50px;
+       }
+       .Service_clients .client p {
+        font-size: 20px;
+       }
+       .Service_clients .client:last-child {
+        margin-left: 40px;
+       }
+       .Service_clients .client img {
+       display: block;
+       margin-right: 20px;
+       }
+
+       .Service_clients .client::after {
+        content: "";
+        display: block;
+        border-right: white 3px solid;
+        height: 135px;
+        margin-left: 120px;   
+       }
+       .Service_clients .client:last-child::after {
+        content: "";
+        display: block;
+        border-right: none;
+       }
+       /*Видео*/
+       .video{
+        padding: 80px 0;
+       }
+       .video_block{
+        display: flex;
+       }
+       .video_text{
+        width: 430px;
+        margin-left: 88px;
+       }
+       .video_text h3{
+        font-size: 30px;
+        font-weight: bold;
+       }
+       .video_text p{
+        margin: 15px 0 30px 0;
+        font-size: 14px;
+       }
+       .video_text ul{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        list-style-type: none;
+        font-size: 14px;
+       }
+       .video_text ul li{
+        margin-bottom: 20px;
+       }
+       .video_text ul li:last-child{
+        margin-bottom:0px;
+       }
+       .video_text ul li img{
+        transform: translateY(30%);
+        margin-right: 5px;
+       }
+          /*тексты с картинками в столбик*/
+          .Lorem_ipsum {
+      
+          }
+          .Lorem_blocks{
+               
+          }
+          .Lorem_block1 {
+           margin-top: 120px;
+         }
+          .Lorem_block1, .Lorem_block2,.Lorem_block3 {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 190px;
+        }
+        .Lorem_block3 {
+           margin-bottom: 0px;
+         }
+        .Lorem_text{
+           width: 540px;
+        }
+        .Lorem_text h3 {
+           margin-bottom: 45px;
+           font-size: 30px;
+           font-weight: normal;
+        }
+      
+        .Lorem_text p {
+           margin-bottom: 45px;
+        }
+      
+        .Lorem_block2{
+           flex-direction: row-reverse;
+         }
+         .Lorem{
+           border-radius: 0%;
+           color: white;
+         } 
+/*Customers*/
+.Customers{
+    margin: 150px 0 0 0;
+    padding: 80px 0;
+    background: #1C140F;
+    background-size: 100%;
+ }
+  .Customers_block h3{
+    font-size: 35px;
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .Customers_block .tip{
+    width: 555px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 70px;
+  }
+  .Customers_blocks{
+   display: flex;
+   justify-content: space-between;
+  }
+  .Customer_block{
+   width: 400px;
+   border: white 2px solid;
+   border-radius: 10px;
+   padding: 30px;
+ }
+
+ .Customer{
+     display: flex;
+    justify-content: space-between;
+    
+ }
+
+ .Customer .Customer_text{
+ display: flex;
+ margin-bottom: 25px;
+ }
+ .Customer .Customer_text div{
+    margin-left: 20px;
+    }
+    .Customer .Customer_text .name{
+        font-size: 18px;
+        font-weight: medium;
+        }
+        .Customer .Customer_text .country{
+            font-size: 14px;
+            color: #4F5665;
+            }
+ .Customer .Customer_number{
+    display: flex;
+ }
+ .Customer .Customer_number p{
+   
+ }
+ .Customer .Customer_number img{
+    transform: translateY(30%);
+   margin-left: 10px;
+ }
+ .text{
+    width: 340px;
+ }
+ .arrow{
+    margin-top: 115px;  
+ }
+ .arrow_block{
+    display: flex;
+    justify-content: space-between;
+ }
+ .arrow .arrow_block div{
+   
+  }
+  .arrow .arrow_block div img{
+    width:60px;   /* устанавливаем ширину */
+    height: 60px;  /* устанавливаем высоту */
+    object-fit: cover;
+  }
+  .right{
+    width:100%;   /* устанавливаем ширину */
+    height: 100%;  /* устанавливаем высоту */
+  }
+    /*Search*/
+    .Service_search {
+        display: flex;
+        justify-content: center;
+    }
+    .Service_search input{
+        background-color: #1C140F;
+        max-height: 50px;
+        margin-left: -230px;
+        margin-top: 75px;
+        z-index: 1;
+        border-radius: 10px;
+        border: 1px black solid;
+        padding-right: 30px;
+        padding-left: 50px;
+    }
+    .Service_search img{
+       z-index: 2;
+       position: relative;
+       top: 92px;
+       left: -360px;
+    }
+     /*lists*/
+     .lists{
+        padding: 100px 0;
+     }
+     .lists_blocks{
+        display: flex;
+        justify-content: space-around;
+     }
+    
+     .list_blocks{
+        width: 587px;
+        margin-right: 70px;
+     }
+     .list_blocks .John{
+        margin-right: 10px;
+        background-color: #2351F5;
+        padding: 10px 20px;
+     }
+     .list_blocks:last-child{
+        margin-right: 0px;
+     }
+     .list_blocks .name{
+        display: flex;
+        margin: 23px 0;
+        align-items: center;
+     }
+     .list_blocks h2{
+        margin-bottom: 32px;
+     }
+     .list_blocks .text{
+        margin-bottom: 44px;
+        width: 530px;
+     }
+     .list_blocks .text2::after{
+        content: "";
+        display: block;
+        margin: 90px 0;
+        width: 587px;
+        height: 1px;
+        background:#A5A5A5
+     }
+     .list_block{
+        display: flex;
+        margin-bottom: 40px;
+     }
+     .list_block .name .red{
+        background-color: #FF8484;
+     }
+     .list_block .name .orange{
+        background-color: #FF7C32;
+     }
+     .list_block .name .green{
+        background-color: #23A54F;
+     }
+     .list_block .name .purple{
+        background-color: #9921C3;
+     }
+     .list_block .name_list{
+        margin-left: 30px;
+     }
+     .list_block .ipsum{
+        margin-left: 30px;
+        width: 340px;
+     }
+     .list_block .John{
+        margin-right: 10px;
+     }
+     .list_block:last-child{
+        margin-bottom: 0px;
+     }
+    /*global*/
+    .global{
+        padding: 100px 0;
+    }
+    .global h5{
+        margin-left: 105px;
+        font-size: 16px;
+    }
+    .global_hero{
+        text-align: center;
+    }
+    .global_hero h2{
+        margin-bottom: 13px;
+        font-size: 33px;
+    }
+    .global_hero p{
+        margin-bottom: 93px;
+        font-size: 16px;
+    }
+    .follow_blocks{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .follow_block{
+        display: flex;
+        align-items: center;
+    }
+    .follow_block p{
+        margin-left: 25px;
+    }
+    .follow_block::after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 102px;
+        border-right: #FFFFFF 2px solid;
+        position: relative;
+        left: 80px;
+
+    }
+    .follow_block:last-child::after{
+        border-right:none;
+    }
+ 
+  /*поля для ввода текста */
+  .feedback {
+    background-color: #1C140F;
+    padding: 70px 0;
+}
+.feedback h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+.feedback p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.feedback form {
+    margin: 80px auto;
+    width: 671px;
+}
+
+.feedback form .inline{
+    display: flex;
+    text-align: center;
+   
+}
+
+.feedback form .inline > div{
+    width: 80%;
+}
+
+
+.feedback form label{
+    color: #4F4F4F;
+    font-size: 14px;
+  
+
+}
+.feedback form input,
+.feedback form textarea{
+     box-sizing: border-box;
+     display: block;
+    background-color: #2c2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    padding: 15px 10px;
+    width: 90%;
+    outline: none;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.feedback form .one-line{
+    width: 96%;
+}
+.feedback form textarea{
+    resize: none;
+    height: 200px;
+}
+.feedback form button{
+    background-color: #DC7000;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    color: white;
+    padding: 15px 35px;
+    transition: all 500ms ease;
+}
+.feedback form button:hover{
+    background-color: red;
+   
+}
+  /*подвал*/
+   footer{
+    background-color: #000000;
+    padding: 50px 0;
+   }
+  footer .block{
+      width:1300px;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 50px;
+  }
+  .block h3{
+    margin-bottom: 20px;
+}
+.block p{
+    margin-bottom: 25px;
+}
+.block p:last-child{
+    margin-bottom: 0px;
+}
+.About_us {
+    margin-right:150px;
+    margin-left:150px;
+    width: 150px;
+    list-style-type:none;
+    padding-left: 0; 
+   
+   }
+   .About_us ul  {
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    padding-left: 0; 
+   }
+   .About_us ul li  {
+    padding-left: 0; 
+   }
+   .Contact_us{
+
+   }
+   .down_images{
+    display: flex;
+    margin-top: 110px;
+    width: 50px;
+    height: 50px;
+   }
+   .end{
+    text-align:center;
+   }
